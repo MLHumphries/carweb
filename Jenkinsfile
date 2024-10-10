@@ -10,7 +10,7 @@ node('ubuntu-appServer-conTest')
 	stage('Build-and-Tag')
 	{
 		//Builds image. Same as docker build on command line
-		app.docker.build('mlhumphries/carweb')
+		app = docker.build('mlhumphries/carweb')
 	}
 
 	stage('Post-to-DockerHub')
