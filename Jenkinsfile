@@ -17,6 +17,9 @@ node('ubuntu-appServer-conTest')
 	{
 		
 		docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
+		{
+			app.push('latest')
+		}
 	}
 
 	stage('Deploy')
