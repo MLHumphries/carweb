@@ -1,4 +1,4 @@
-node('ubuntu-appServer-conTest')
+node('appServer_softsec')
 {
 	def app
 	stage('Cloning Git')
